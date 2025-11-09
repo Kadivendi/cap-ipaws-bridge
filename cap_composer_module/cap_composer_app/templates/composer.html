@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CAP 1.2 Composer</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 880px; margin: 2rem auto; padding: 0 1rem; }
+        h1 { margin-bottom: 0.5rem; }
+        form { display: grid; gap: 0.75rem; }
+        label { display: block; font-weight: 600; }
+        input, select, textarea { width: 100%; padding: 0.45rem; box-sizing: border-box; }
+        .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; }
+        button { padding: 0.6rem 1rem; width: 14rem; }
+        pre { background: #f6f6f6; padding: 1rem; overflow-x: auto; }
+        .error { background: #fee; color: crimson; padding: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>CAP 1.2 Composer</h1>
+    <p>
+        Authoring UI for jurisdictions that need to originate their own
+        warnings. Submissions are validated against the OASIS schema and
+        forwarded to <code>{{ bridge_url }}</code> for dispatch through
+        IPAWS-OPEN.
+    </p>
+
+    <form id="cap-form">
+        <label>Event ID
+            <input name="event_id" placeholder="evt-001 (auto if blank)" />
+        </label>
+
+        <div class="row3">
+            <label>Severity
+                <select name="severity">
+                    {% for s in severities %}
+                    <option value="{{ s }}" {% if s == 'Severe' %}selected{% endif %}>{{ s }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+            <label>Urgency
+                <select name="urgency">
+                    {% for s in urgencies %}
+                    <option value="{{ s }}" {% if s == 'Immediate' %}selected{% endif %}>{{ s }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+            <label>Certainty
+                <select name="certainty">
+                    {% for s in certainties %}
+                    <option value="{{ s }}" {% if s == 'Observed' %}selected{% endif %}>{{ s }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+        </div>
+
+        <label>Headline
+            <input name="headline" required maxlength="160" />
+        </label>
+
+        <label>Description
+            <textarea name="description" rows="4" required></textarea>
+        </label>
+
+        <label>Instruction
+            <textarea name="instruction" rows="2"></textarea>
+        </label>
+
+        <label>Target areas (one per line)
+            <textarea name="target_areas" rows="3" placeholder="Los Angeles County, CA&#10;Orange County, CA"></textarea>
+        </label>
+
+        <button type="submit">Compose &amp; dispatch</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+    document.getElementById('cap-form').addEventListener('submit', async (evt) => {
+        evt.preventDefault();
+        const form = evt.target;
+        const data = new FormData(form);
+        const payload = Object.fromEntries(data.entries());
+        payload.target_areas = (payload.target_areas || '')
+            .split('\n').map(s => s.trim()).filter(Boolean);
+
+        const resp = await fetch('/compose/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(payload),
+        });
+        const body = await resp.json();
+        const target = document.getElementById('result');
+        if (resp.ok) {
+            target.innerHTML = '<h2>Result</h2><pre>' +
+                JSON.stringify(body, null, 2) + '</pre>';
+        } else {
+            target.innerHTML = '<div class="error"><strong>Error</strong><pre>' +
+                JSON.stringify(body, null, 2) + '</pre></div>';
+        }
+    });
+    </script>
+</body>
+</html>
