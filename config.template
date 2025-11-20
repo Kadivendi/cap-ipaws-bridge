@@ -1,0 +1,39 @@
+# cap-ipaws-bridge configuration template
+# Copy to config.ini (or export each line as an env var) and edit values.
+
+[ipaws]
+endpoint = https://apps.fema.gov/IPAWSOPEN_EAS_SERVICE/rest
+cert_path = /certs/fema.p12
+cert_password =
+sandbox = true
+poll_interval_seconds = 30
+max_alerts_per_poll = 100
+alert_types = Alert,Update,Cancel
+
+[geographic_filter]
+enabled = true
+states = CA,OR,WA,NV,AZ
+
+[rapid_alert]
+url = http://rapid-alert-platform:8080
+client_id =
+client_secret =
+
+[mesh_gateway]
+url = http://resilient-mesh-gateway:8090
+api_key =
+severity_threshold = severe
+
+[dedup]
+ttl_seconds = 3600
+max_entries = 50000
+
+[circuit_breaker]
+failure_threshold = 5
+success_threshold = 2
+timeout_seconds = 30
+
+[server]
+host = 0.0.0.0
+port = 8000
+cors_origins = http://localhost:3000,http://localhost:8080
