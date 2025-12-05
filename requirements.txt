@@ -1,0 +1,16 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+httpx==0.25.1
+lxml==4.9.3
+pydantic==2.5.1
+requests==2.31.0
+python-dotenv==1.0.0
+redis==5.0.1
+prometheus-client==0.18.0
+wagtail==6.0
+celery==5.3.6
+psycopg2-binary==2.9.9
+beautifulsoup4==4.12.2
+geopy==2.4.1
+schedule==1.2.1
+pytest==7.4.3
