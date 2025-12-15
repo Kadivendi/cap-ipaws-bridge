@@ -1,0 +1,99 @@
+import logging
+from logging.handlers import TimedRotatingFileHandler
+import modules.settings as my_settings
+# if LOGGING_LEVEL is not set in settings.py, default to DEBUG
+if not my_settings.LOGGING_LEVEL:
+    my_settings.LOGGING_LEVEL = "DEBUG"
+
+LOGGING_LEVEL = getattr(logging, my_settings.LOGGING_LEVEL)
+
+class CustomFormatter(logging.Formatter):
+    grey = '\x1b[38;21m'
+    white = '\x1b[38;5;231m'
+    blue = '\x1b[38;5;39m'
+    yellow = '\x1b[38;5;226m'
+    red = '\x1b[38;5;196m'
+    green = '\x1b[38;5;46m'
+    purple = '\x1b[38;5;129m'
+    bold_red = '\x1b[31;1m'
+    bold_white = '\x1b[37;1m'
+    reset = '\x1b[0m'
+
+    def __init__(self, fmt):
+        super().__init__()
+        self.fmt = fmt
+        self.FORMATS = {
+            logging.DEBUG: self.blue + self.fmt + self.reset,
+            logging.INFO: self.white + self.fmt + self.reset,
+            logging.WARNING: self.yellow + self.fmt + self.reset,
+            logging.ERROR: self.red + self.fmt + self.reset,
+            logging.CRITICAL: self.bold_red + self.fmt + self.reset
+        }
+
+    def format(self, record):
+        log_fmt = self.FORMATS.get(record.levelno)
+        formatter = logging.Formatter(log_fmt)
+        return formatter.format(record)
+    
+class plainFormatter(logging.Formatter):
+    ansi_codes = [
+        '\x1b[38;21m', '\x1b[38;5;231m', '\x1b[38;5;39m', '\x1b[38;5;226m',
+        '\x1b[38;5;196m', '\x1b[38;5;46m', '\x1b[38;5;129m', '\x1b[31;1m',
+        '\x1b[37;1m', '\x1b[0m'
+    ]
+
+    def format(self, record):
+        message = super().format(record)
+        for code in self.ansi_codes:
+            message = message.replace(code, '')
+        return message
+
+# Create logger
+logger = logging.getLogger("CapAlertBridge System Logger")
+logger.setLevel(LOGGING_LEVEL)
+logger.propagate = False
+
+msgLogger = logging.getLogger("CapAlertBridge Messages Logger")
+msgLogger.setLevel(logging.INFO)
+msgLogger.propagate = False
+
+# Define format for logs
+logFormat = '%(asctime)s | %(levelname)8s | %(message)s'
+msgLogFormat = '%(asctime)s | %(message)s'
+
+# Create stdout handler for logging to the console
+stdout_handler = logging.StreamHandler()
+# Set level for stdout handler (logs DEBUG level and above)
+stdout_handler.setLevel(LOGGING_LEVEL)
+# Set format for stdout handler
+stdout_handler.setFormatter(CustomFormatter(logFormat))
+# Add handlers to the logger
+logger.addHandler(stdout_handler)
+
+if my_settings.syslog_to_file:
+    # Create file handler for logging to a file
+    file_handler_sys = TimedRotatingFileHandler('logs/meshbot.log', when='midnight', backupCount=my_settings.log_backup_count, encoding='utf-8')
+    file_handler_sys.setLevel(LOGGING_LEVEL) # DEBUG used by default for system logs to disk
+    file_handler_sys.setFormatter(plainFormatter(logFormat))
+    logger.addHandler(file_handler_sys)
+
+if my_settings.log_messages_to_file:
+    # Create file handler for logging to a file
+    file_handler = TimedRotatingFileHandler('logs/messages.log', when='midnight', backupCount=my_settings.log_backup_count, encoding='utf-8')
+    file_handler.setLevel(logging.INFO) # INFO used for messages to disk
+    file_handler.setFormatter(logging.Formatter(msgLogFormat))
+    msgLogger.addHandler(file_handler)
+
+# Pretty Timestamp
+def getPrettyTime(seconds):
+    # convert unix time to minutes, hours, days, or years for simple display
+    if seconds < 60:
+        return f"{int(seconds)}s"
+    elif seconds < 3600:
+        return f"{int(round(seconds / 60))}m"
+    elif seconds < 86400:
+        return f"{int(round(seconds / 3600))}h"
+    elif seconds < 31536000:
+        return f"{int(round(seconds / 86400))}d"
+    else:
+        return f"{int(round(seconds / 31536000))}y"
