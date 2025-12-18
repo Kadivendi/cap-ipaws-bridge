@@ -1,1 +1,1 @@
-# Processing pipeline modules for CAP alert ingestion
+"""Alert processing modules: deduplication, caching, and validation."""
