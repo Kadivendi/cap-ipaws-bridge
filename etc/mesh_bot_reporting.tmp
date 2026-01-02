@@ -1,0 +1,28 @@
+# /etc/systemd/system/mesh_bot_reporting.service
+# sudo systemctl daemon-reload
+# sudo systemctl enable mesh_bot_reporting.service
+# sudo systemctl start mesh_bot_reporting.service
+
+[Unit]
+Description=MeshingAround-Reporting
+After=network.target
+
+[Service]
+Type=oneshot
+User=pi
+Group=pi
+WorkingDirectory=/dir/
+ExecStart=python3 etc/report_generator5.py
+ExecStop=pkill -f report_generator5.py
+# ExecStart=python3 etc/report_generator.py
+# ExecStop=pkill -f report_generator.py
+
+
+# Disable Python's buffering of STDOUT and STDERR, so that output from the
+# service shows up immediately in systemd's logs
+Environment=PYTHONUNBUFFERED=1
+
+Restart=on-failure
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=MeshingAround-ReportingTask
+
+[Timer]
+OnCalendar=*-*-* 04:20:00
+Persistent=true
+Unit=mesh_bot_reporting.service
+#OnUnitActiveSec=1h
+#OnbootSec=5min
+
+[Install]
+WantedBy=timers.target
