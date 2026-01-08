@@ -1,0 +1,1562 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-26 13:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: capcomposer/src/capcomposer/config/templates/404.html:19
+msgid "Page not found"
+msgstr "لم يتم العثور على الصفحة"
+
+#: capcomposer/src/capcomposer/config/templates/404.html:23
+msgid "Sorry, this page could not be found"
+msgstr "عذرا، لا يمكن العثور على هذه الصفحة"
+
+#: capcomposer/src/capcomposer/config/templates/500.html:17
+msgid "Internal server error"
+msgstr "خطأ في الخادم الداخلي"
+
+#: capcomposer/src/capcomposer/config/templates/500.html:20
+msgid "Sorry, there seems to be an error. Please try again soon"
+msgstr "عذرا، يبدو أن هناك خطأ. يرجى المحاولة مرة أخرى قريبا"
+
+#: capcomposer/src/capcomposer/config/templates/axes/lockout.html:4
+msgid "Sign in"
+msgstr "تسجيل الدخول"
+
+#: capcomposer/src/capcomposer/config/templates/axes/lockout.html:10
+msgid "Account Locked"
+msgstr "الحساب مغلق"
+
+#: capcomposer/src/capcomposer/config/templates/axes/lockout.html:15
+msgid ""
+"Your account has been locked due to multiple failed login attempts. Please "
+"try again later."
+msgstr ""
+"لقد تم قفل حسابك بسبب عدة محاولات تسجيل دخول فاشلة. يرجى المحاولة مرة أخرى "
+"في وقت لاحق."
+
+#: capcomposer/src/capcomposer/config/templates/axes/lockout.html:17
+msgid ""
+"You account has been locked due to multiple failed login attempts. Please "
+"contact our support team for assistance."
+msgstr ""
+"لقد تم قفل حسابك بسبب عدة محاولات تسجيل دخول فاشلة. يرجى الاتصال بفريق الدعم"
+" لدينا للحصول على المساعدة."
+
+#: capcomposer/src/capcomposer/config/templates/footer.html:5
+msgid "Powered by CAPComposer"
+msgstr "مدعوم من CAPComposer"
+
+#: capcomposer/src/capcomposer/config/templates/wagtailadmin/home.html:5
+msgid "Welcome to"
+msgstr "مرحبا بكم في"
+
+#: capcomposer/src/capcomposer/config/templates/wagtailadmin/home.html:9
+msgid "CAPComposer"
+msgstr "CAPComposer"
+
+#: capcomposer/src/capcomposer/home/models.py:19
+msgid "Subtitle"
+msgstr "الترجمة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:117
+#: capcomposer/src/capcomposer/capeditor/blocks.py:145
+#: capcomposer/src/capcomposer/capeditor/blocks.py:502
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:163
+msgid "Name"
+msgstr "اسم"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:117
+msgid "Name of the recipient"
+msgstr "اسم المستلم"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:118
+msgid "Address"
+msgstr "عنوان"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:118
+msgid "Address Information of the recipient"
+msgstr "معلومات عنوان المستلم"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:136
+#: capcomposer/src/capcomposer/capeditor/models.py:228
+msgid "Reference Alert"
+msgstr "التنبيه المرجعي"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:137
+msgid "Earlier alert referenced by this alert"
+msgstr "التنبيه السابق المشار إليه بواسطة هذا التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:141
+#: capcomposer/src/capcomposer/capeditor/models.py:233
+msgid "Incident"
+msgstr "حادثة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:141
+msgid "Referent incident to this alert message"
+msgstr "قم بإحالة الحادث إلى رسالة التنبيه هذه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:146
+#: capcomposer/src/capcomposer/capeditor/blocks.py:173
+#: capcomposer/src/capcomposer/capeditor/blocks.py:503
+msgid "Value"
+msgstr "قيمة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:151
+msgid "Shelter - Take shelter in place or per instruction"
+msgstr "المأوى - الاحتماء في المكان أو حسب التعليمات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:152
+msgid "Evacuate - Relocate as instructed in the instruction"
+msgstr "الإخلاء - النقل وفقًا للتعليمات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:153
+msgid "Prepare - Relocate as instructed in the instruction"
+msgstr "الاستعداد - النقل وفقًا للتعليمات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:154
+msgid "Execute - Execute a pre-planned activity identified in instruction"
+msgstr "تنفيذ - تنفيذ نشاط مخطط مسبقًا تم تحديده في التعليمات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:155
+msgid "Avoid - Avoid the subject event as per the instruction"
+msgstr "تجنب - تجنب الحدث الموضوع وفقًا للتعليمات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:156
+msgid "Monitor - Attend to information sources as described in instruction"
+msgstr "المراقبة - الحضور إلى مصادر المعلومات كما هو موضح في التعليمات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:157
+msgid ""
+"Assess - Evaluate the information in this message - DONT USE FOR PUBLIC "
+"ALERTS"
+msgstr ""
+"التقييم - قم بتقييم المعلومات الواردة في هذه الرسالة - لا تستخدمها للتنبيهات"
+" العامة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:158
+msgid ""
+"All Clear - The subject event no longer poses a threat or concern and any "
+"follow on action is described in instruction"
+msgstr ""
+"كل شيء واضح - لم يعد الحدث الموضوع يشكل تهديدًا أو قلقًا ويتم وصف أي إجراء "
+"متابعة في التعليمات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:160
+msgid "No action recommended"
+msgstr "لا يوجد إجراء موصى به"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:163
+msgid "Response type"
+msgstr "نوع الاستجابة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:164
+msgid ""
+"The code denoting the type of action recommended for the target audience"
+msgstr "الرمز الذي يشير إلى نوع الإجراء الموصى به للجمهور المستهدف"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:169
+msgid "Value Name"
+msgstr "اسم القيمة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:171
+msgid ""
+"User-assigned string designating the domain of the code. Acronyms SHOULD be "
+"represented in all capital letters without periods (e.g., SAME, FIPS, ZIP"
+msgstr ""
+"سلسلة مخصصة للمستخدم تحدد مجال الكود. ينبغي تمثيل الاختصارات بأحرف كبيرة "
+"بدون نقاط (على سبيل المثال، SAME، FIPS، ZIP)"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:174
+msgid "A string (which may represent a number) denoting the value itself"
+msgstr "سلسلة (قد تمثل رقمًا) تشير إلى القيمة نفسها"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:177
+msgid "Geographically-based code to describe a message target area"
+msgstr "رمز يعتمد على الموقع الجغرافي لوصف المنطقة المستهدفة للرسالة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:233
+msgid "Level 0"
+msgstr "المستوى 0"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:234
+msgid "Level 1"
+msgstr "المستوى 1"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:235
+msgid "Level 2"
+msgstr "المستوى 2"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:236
+msgid "Level 3"
+msgstr "المستوى 3"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:239
+#: capcomposer/src/capcomposer/capeditor/blocks.py:299
+#: capcomposer/src/capcomposer/capeditor/blocks.py:377
+msgid "Affected areas / Regions"
+msgstr "المناطق / المناطق المتضررة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:241
+#: capcomposer/src/capcomposer/capeditor/blocks.py:301
+#: capcomposer/src/capcomposer/capeditor/blocks.py:379
+msgid "The text describing the affected area of the alert message"
+msgstr "النص الذي يصف المنطقة المتأثرة في رسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:242
+msgid "Administrative Level"
+msgstr "المستوى الإداري"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:243
+msgid "Boundary"
+msgstr "الحدود"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:244
+#: capcomposer/src/capcomposer/capeditor/blocks.py:304
+msgid ""
+"The paired values of points defining a polygon that delineates the affected "
+"area of the alert message"
+msgstr ""
+"القيم المقترنة للنقاط التي تحدد المضلع الذي يحدد المنطقة المتأثرة من رسالة "
+"التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:247
+#: capcomposer/src/capcomposer/capeditor/blocks.py:306
+#: capcomposer/src/capcomposer/capeditor/blocks.py:381
+#: capcomposer/src/capcomposer/capeditor/blocks.py:430
+msgid "Altitude"
+msgstr "ارتفاع"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:248
+#: capcomposer/src/capcomposer/capeditor/blocks.py:307
+#: capcomposer/src/capcomposer/capeditor/blocks.py:382
+#: capcomposer/src/capcomposer/capeditor/blocks.py:431
+msgid ""
+"The specific or minimum altitude of the affected area of the alert message"
+msgstr "الارتفاع المحدد أو الأدنى للمنطقة المتأثرة برسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:250
+#: capcomposer/src/capcomposer/capeditor/blocks.py:309
+#: capcomposer/src/capcomposer/capeditor/blocks.py:384
+#: capcomposer/src/capcomposer/capeditor/blocks.py:433
+msgid "Ceiling"
+msgstr "سقف"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:251
+#: capcomposer/src/capcomposer/capeditor/blocks.py:310
+#: capcomposer/src/capcomposer/capeditor/blocks.py:385
+#: capcomposer/src/capcomposer/capeditor/blocks.py:434
+msgid ""
+"The maximum altitude of the affected area of the alert message.MUST NOT be "
+"used except in combination with the altitude element. "
+msgstr ""
+"الحد الأقصى لارتفاع المنطقة المتأثرة برسالة التنبيه. يجب عدم استخدامه إلا مع"
+" عنصر الارتفاع."
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:254
+#: capcomposer/src/capcomposer/capeditor/blocks.py:312
+#: capcomposer/src/capcomposer/capeditor/blocks.py:387
+#: capcomposer/src/capcomposer/capeditor/blocks.py:436
+msgid "Geocode"
+msgstr "الرمز الجغرافي"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:302
+msgid "Polygon"
+msgstr "مضلع"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:380
+#: capcomposer/src/capcomposer/capeditor/blocks.py:693
+msgid "Circle"
+msgstr "دائرة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:380
+msgid "Drag the marker to change position"
+msgstr "اسحب العلامة لتغيير الموضع"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:429
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:73
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:164
+msgid "Area"
+msgstr "منطقة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:439
+msgid "The human-readable name of the agency or authority issuing this alert."
+msgstr ""
+"الاسم الذي يمكن قراءته بواسطة الإنسان للوكالة أو السلطة التي تصدر هذا "
+"التنبيه."
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:440
+msgid ""
+"The text describing the contact for follow-up and confirmation of the alert "
+"message"
+msgstr "النص الذي يصف جهة الاتصال للمتابعة وتأكيد رسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:482
+#: capcomposer/src/capcomposer/capeditor/blocks.py:491
+msgid "Resource Description"
+msgstr "وصف الموارد"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:483
+#: capcomposer/src/capcomposer/capeditor/blocks.py:492
+msgid "The text describing the type and content of the resource file"
+msgstr "النص الذي يصف نوع ومحتوى ملف المورد"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:493
+msgid "External Resource Link"
+msgstr "رابط الموارد الخارجية"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:494
+msgid ""
+"Link to external resource. This can be for example a link to related "
+"websites. "
+msgstr ""
+"رابط إلى الموارد الخارجية. يمكن أن يكون هذا على سبيل المثال رابطًا لمواقع "
+"الويب ذات الصلة."
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:502
+msgid "Name for the event code"
+msgstr "اسم رمز الحدث"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:503
+msgid "Value of the event code"
+msgstr "قيمة رمز الحدث"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:624
+msgid "Immediate - Responsive action SHOULD be taken immediately"
+msgstr "فوري - ينبغي اتخاذ إجراء سريع الاستجابة على الفور"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:625
+msgid "Expected - Responsive action SHOULD be taken soon (within next hour)"
+msgstr "متوقع - ينبغي اتخاذ الإجراء المستجيب قريبًا (خلال الساعة القادمة)"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:626
+msgid "Future - Responsive action SHOULD be taken in the near future"
+msgstr "المستقبل - ينبغي اتخاذ إجراءات سريعة الاستجابة في المستقبل القريب"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:627
+msgid "Past - Responsive action is no longer required"
+msgstr "الماضي - لم يعد الإجراء المستجيب مطلوبًا"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:632
+msgid "Extreme - Extraordinary threat to life or property"
+msgstr "المدقع - تهديد غير عادي للحياة أو الممتلكات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:633
+msgid "Severe - Significant threat to life or property"
+msgstr "شديد - تهديد كبير للحياة أو الممتلكات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:634
+msgid "Moderate - Possible threat to life or property"
+msgstr "معتدل - تهديد محتمل للحياة أو الممتلكات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:635
+msgid "Minor - Minimal to no known threat to life or property"
+msgstr "طفيف - الحد الأدنى إلى عدم وجود تهديد معروف للحياة أو الممتلكات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:640
+msgid "Observed - Determined to have occurred or to be ongoing"
+msgstr "ملاحظ - مصمم على حدوثه أو استمراره"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:641
+msgid "Likely - Likely (percentage > ~50%)"
+msgstr "محتمل - محتمل (النسبة المئوية > ~50%)"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:642
+msgid "Possible - Possible but not likely (percentage <= ~50%)"
+msgstr "ممكن - ممكن ولكن غير محتمل (النسبة المئوية <= ~50%)"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:643
+msgid "Unlikely - Not expected to occur (percentage ~ 0)"
+msgstr "غير محتمل - غير متوقع حدوثه (النسبة المئوية ~ 0)"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:647
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:30
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:195
+msgid "Event"
+msgstr "حدث"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:648
+msgid ""
+"The text denoting the type of the subject event of the alert message. You "
+"can define hazards events monitored by your institution from CAP settings"
+msgstr ""
+"النص الذي يشير إلى نوع الحدث الموضوعي لرسالة التنبيه. يمكنك تحديد أحداث "
+"المخاطر التي تراقبها مؤسستك من إعدادات CAP"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:651
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:77
+msgid "Language"
+msgstr "لغة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:652
+#, fuzzy
+#| msgid "The code denoting the language of the alert message"
+msgid ""
+"The code denoting the language of the alert message.If not selected, 'en-US'"
+" will be used as default"
+msgstr ""
+"الرمز الذي يشير إلى لغة رسالة التنبيه. إذا لم يتم تحديده، فسيتم استخدام "
+"\"en-US\" كلغة افتراضية"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:654
+msgid "Urgency"
+msgstr "إلحاح"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:655
+msgid ""
+"The code denoting the urgency of the subject event of the alert message"
+msgstr "الرمز الذي يشير إلى مدى إلحاح الحدث الموضوع لرسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:657
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:104
+msgid "Severity"
+msgstr "خطورة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:658
+msgid ""
+"The code denoting the severity of the subject event of the alert message"
+msgstr "الرمز الذي يشير إلى مدى خطورة الحدث الموضوع لرسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:660
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:113
+msgid "Certainty"
+msgstr "بالتاكيد"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:661
+msgid ""
+"The code denoting the certainty of the subject event of the alert message"
+msgstr "الرمز الذي يشير إلى يقين الحدث الموضوعي لرسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:663
+msgid "Headline"
+msgstr "العنوان"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:664
+msgid ""
+"The text headline of the alert message. Make it direct and actionable as "
+"possible while remaining short"
+msgstr ""
+"العنوان النصي لرسالة التنبيه. اجعلها مباشرة وقابلة للتنفيذ قدر الإمكان مع "
+"بقائها قصيرة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:666
+msgid "Description"
+msgstr "وصف"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:668
+msgid ""
+"The text describing the subject event of the alert message. An extended "
+"description of the hazard or event that occasioned this message"
+msgstr ""
+"النص الذي يصف حدث موضوع رسالة التنبيه. وصف موسع للخطر أو الحدث الذي تسبب في "
+"هذه الرسالة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:670
+msgid "Instruction"
+msgstr "تعليمات"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:671
+msgid ""
+"The text describing the recommended action to be taken by recipients of the "
+"alert message"
+msgstr "النص الذي يصف الإجراء الموصى باتخاذه من قبل مستلمي رسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:673
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:56
+msgid "Effective"
+msgstr "فعال"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:674
+msgid ""
+"The effective time of the information of the alert message. If not set, the "
+"sent date will be used"
+msgstr ""
+"الوقت الفعلي لمعلومات رسالة التنبيه. إذا لم يتم تعيينه، سيتم استخدام تاريخ "
+"الإرسال"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:676
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:72
+msgid "Onset"
+msgstr "بداية"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:677
+msgid ""
+"The expected time of the beginning of the subject event of the alert message"
+msgstr "الوقت المتوقع لبداية حدث الموضوع لرسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:679
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:81
+msgid "Expires"
+msgstr "تنتهي"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:680
+msgid ""
+"The expiry time of the information of the alert message. If not set, each "
+"recipient is free to set its own policy as to when the message is no longer "
+"in effect."
+msgstr ""
+"وقت انتهاء معلومات رسالة التنبيه. إذا لم يتم التعيين، يكون لكل مستلم الحرية "
+"في تعيين سياسته الخاصة فيما يتعلق بالوقت الذي تصبح فيه الرسالة غير سارية."
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:683
+msgid "Response Types"
+msgstr "أنواع الاستجابة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:685
+msgid "Sender name"
+msgstr "اسم المرسل"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:687
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:43
+msgid "Contact"
+msgstr "اتصال"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:688
+msgid "Audience"
+msgstr "جمهور"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:689
+msgid "The text describing the intended audience of the alert message"
+msgstr "النص الذي يصف الجمهور المستهدف لرسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:691
+msgid "Admin Boundary"
+msgstr "حدود المشرف"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:692
+msgid "Draw Polygon"
+msgstr "رسم المضلع"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:694
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:167
+msgid "Predefined Area"
+msgstr "منطقة محددة مسبقًا"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:695
+msgid "Alert Area"
+msgstr "منطقة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:695
+msgid "Admin Boundary, Polygon, Circle, or Predefined area"
+msgstr "حدود المسؤول أو المضلع أو الدائرة أو المنطقة المحددة مسبقًا"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:700
+msgid "Resources"
+msgstr "موارد"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:700
+msgid ""
+"Additional file with supplemental information related to this alert "
+"information"
+msgstr "ملف إضافي يحتوي على معلومات تكميلية تتعلق بمعلومات التنبيه هذه"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:703
+msgid "Parameter"
+msgstr "المعلمة"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:703
+msgid "Parameters"
+msgstr "حدود"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:723
+msgid "The expiry time of the alert should be greater than the effective time"
+msgstr "يجب أن يكون وقت انتهاء التنبيه أكبر من الوقت الفعلي"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:728
+msgid "The expiry time of the alert should be greater than the onset time"
+msgstr "يجب أن يكون وقت انتهاء التنبيه أكبر من وقت البداية"
+
+#: capcomposer/src/capcomposer/capeditor/blocks.py:735
+msgid "Contact Detail"
+msgstr "تفاصيل الاتصال"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:29
+msgid "CAP Sender Email"
+msgstr "البريد الإلكتروني لمرسل CAP"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:30
+msgid "Email of the sending institution"
+msgstr "البريد الإلكتروني للمؤسسة المرسلة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:31
+msgid "CAP Sender Name"
+msgstr "اسم مرسل CAP"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:32
+msgid "Name of the sending institution"
+msgstr "اسم المؤسسة المرسلة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:34
+msgid "WMO Register of Alerting Authorities OID"
+msgstr "سجل المنظمة (WMO) لسلطات التنبيه (OID)."
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:35
+msgid ""
+"WMO Register of Alerting Authorities Object Identifier (OID) of the sending "
+"institution. This will be used to generate CAP messages identifiers"
+msgstr ""
+"سجل المنظمة (WMO) لسلطات التنبيه (OID) الخاص بالمؤسسة المرسلة. سيتم استخدام "
+"هذا لإنشاء معرفات رسائل CAP"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:40
+msgid "Logo of the sending institution"
+msgstr "شعار المؤسسة المرسلة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:44
+msgid "Contact Details"
+msgstr "تفاصيل الاتصال"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:45
+msgid "Contact for follow-up and confirmation of the alert message"
+msgstr "الاتصال للمتابعة والتأكيد على رسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:47
+msgid "UN Country Boundary"
+msgstr "الحدود القطرية للأمم المتحدة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:48
+msgid ""
+"GeoJSON file of the UN Country Boundary. Setting this will enable the UN "
+"Country Boundary check in the alertdrawing tools"
+msgstr ""
+"ملف GeoJSON لحدود الأمم المتحدة. سيؤدي ضبط هذا إلى تمكين فحص الحدود القطرية "
+"للأمم المتحدة في أدوات رسم التنبيهات"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:54
+msgid "Number of latest Alerts to show in the XML CAP Feed"
+msgstr "عدد أحدث التنبيهات التي سيتم عرضها في موجز XML CAP"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:54
+msgid "Set a smaller number to improve perfomance for aggregators"
+msgstr "قم بتعيين رقم أصغر لتحسين أداء أدوات التجميع"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:58
+msgid "CAP Settings"
+msgstr "إعدادات كاب"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:67
+msgid "Sender Details"
+msgstr "تفاصيل المرسل"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:69
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:71
+msgid "Hazard Types"
+msgstr "أنواع المخاطر"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:69
+msgid "Hazard Type"
+msgstr "نوع الخطر"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:70
+msgid "Hazards monitored by the institution"
+msgstr "المخاطر التي ترصدها المؤسسة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:73
+msgid "Predefined Alert Areas"
+msgstr "مناطق التنبيه المحددة مسبقًا"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:74
+msgid "Predefined areas for alerts"
+msgstr "مناطق محددة مسبقا للتنبيهات"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:75
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:168
+msgid "Predefined Areas"
+msgstr "المناطق المحددة مسبقًا"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:77
+msgid "Allowed Alert Languages"
+msgstr "لغات التنبيه المسموح بها"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:78
+#, fuzzy
+#| msgid "Language"
+msgid "Languages"
+msgstr "اللغات"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:83
+msgid "UN Boundary"
+msgstr "حدود الأمم المتحدة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:86
+#, fuzzy
+#| msgid "CAP Settings"
+msgid "Other Settings"
+msgstr "إعدادات أخرى"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:110
+msgid "Geophysical"
+msgstr "جيوفيزيائية"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:111
+msgid "Meteorological"
+msgstr "الأرصاد الجوية"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:112
+msgid "General emergency and public safety"
+msgstr "الطوارئ العامة والسلامة العامة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:113
+msgid "Law enforcement, military, homeland and local/private security"
+msgstr "إنفاذ القانون والجيش والوطن والأمن المحلي / الخاص"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:114
+msgid "Rescue and recovery"
+msgstr "الإنقاذ والانتعاش"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:115
+msgid "Fire suppression and rescue"
+msgstr "إخماد الحرائق والإنقاذ"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:116
+msgid "Medical and public health"
+msgstr "الطبية والصحة العامة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:117
+msgid "Pollution and other environmental"
+msgstr "التلوث البيئي وغيره"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:118
+msgid "Public and private transportation"
+msgstr "وسائل النقل العامة والخاصة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:119
+msgid "Utility, telecommunication, other non-transport infrastructure"
+msgstr "المرافق والاتصالات والبنية التحتية الأخرى غير النقل"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:120
+msgid ""
+"Chemical, Biological, Radiological, Nuclear or High-Yield Explosive threat "
+"or attack"
+msgstr "تهديد أو هجوم كيميائي أو بيولوجي أو إشعاعي أو نووي أو شديد الانفجار"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:121
+msgid "Other events"
+msgstr "أحداث أخرى"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:126
+msgid "Select from WMO list of Hazards Event Types"
+msgstr "اختر من قائمة المنظمة العالمية للأرصاد الجوية لأنواع أحداث المخاطر"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:127
+msgid "Hazard"
+msgstr "خطر"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:127
+msgid "Name of Hazard"
+msgstr "اسم الخطر"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:128
+msgid "Category"
+msgstr "فئة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:130
+#, fuzzy
+#| msgid "Name of Hazard"
+msgid "Category of Hazard"
+msgstr "فئة الخطر"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:131
+msgid "Event Code"
+msgstr "رمز الحدث"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:132
+msgid "Icon"
+msgstr "رمز"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:132
+msgid "Matching icon"
+msgstr "أيقونة المطابقة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:145
+#, fuzzy
+#| msgid "Event Code"
+msgid "Event Code is required"
+msgstr "رمز الحدث مطلوب"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:153
+msgid "This event type already exists"
+msgstr "نوع الحدث هذا موجود بالفعل"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:189
+#, fuzzy
+#| msgid "Language"
+msgid "Language Code"
+msgstr "رمز اللغة"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:189
+msgid "ISO 639-1 language code"
+msgstr "رمز اللغة ISO 639-1"
+
+#: capcomposer/src/capcomposer/capeditor/cap_settings.py:190
+#, fuzzy
+#| msgid "Language"
+msgid "Language Name"
+msgstr "اسم اللغة"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:4
+msgid "Geo"
+msgstr "جغرافية"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:5
+msgid "Met"
+msgstr "التقى"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:6
+msgid "Safety"
+msgstr "أمان"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:7
+msgid "Security"
+msgstr "حماية"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:8
+msgid "Rescue"
+msgstr "ينقذ"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:9
+msgid "Fire"
+msgstr "نار"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:10
+msgid "Health"
+msgstr "صحة"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:11
+msgid "Env"
+msgstr "البيئة"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:12
+msgid "Transport"
+msgstr "ينقل"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:13
+msgid "Infra"
+msgstr "الأشعة تحت الحمراء"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:14
+msgid "CBRNE"
+msgstr "سي بي آر إن إي"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:15
+msgid "Other"
+msgstr "آخر"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:19
+#: capcomposer/src/capcomposer/capeditor/constants.py:194
+msgid "Immediate"
+msgstr "مباشر"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:20
+#: capcomposer/src/capcomposer/capeditor/constants.py:199
+#: capcomposer/src/capcomposer/capeditor/models.py:322
+msgid "Expected"
+msgstr "مُتوقع"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:21
+#: capcomposer/src/capcomposer/capeditor/constants.py:204
+msgid "Future"
+msgstr "مستقبل"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:22
+#: capcomposer/src/capcomposer/capeditor/constants.py:209
+msgid "Past"
+msgstr "ماضي"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:27
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:146
+msgid "Extreme"
+msgstr "أقصى"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:28
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:152
+msgid "Severe"
+msgstr "شديد"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:29
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:158
+msgid "Moderate"
+msgstr "معتدل"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:30
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:164
+msgid "Minor"
+msgstr "صغير"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:35
+#: capcomposer/src/capcomposer/capeditor/constants.py:222
+msgid "Observed"
+msgstr "لاحظ"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:36
+#: capcomposer/src/capcomposer/capeditor/constants.py:227
+msgid "Likely"
+msgstr "محتمل"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:37
+#: capcomposer/src/capcomposer/capeditor/constants.py:232
+msgid "Possible"
+msgstr "ممكن"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:38
+#: capcomposer/src/capcomposer/capeditor/constants.py:237
+msgid "Unlikely"
+msgstr "من غير المحتمل"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:43
+msgid "Shelter"
+msgstr "مَأوىً"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:44
+msgid "Evacuate"
+msgstr "إخلاء"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:45
+msgid "Prepare"
+msgstr "يحضر"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:46
+msgid "Execute"
+msgstr "ينفذ"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:47
+msgid "Avoid"
+msgstr "يتجنب"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:48
+msgid "Monitor"
+msgstr "شاشة"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:49
+msgid "Assess"
+msgstr "يٌقيِّم"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:50
+msgid "AllClear"
+msgstr "كل كلير"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:51
+msgid "None"
+msgstr "لا أحد"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:56
+msgid "Avalanche"
+msgstr "انهيار جليدي"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:57
+msgid "Cold wave"
+msgstr "موجة باردة"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:58
+msgid "Drought/Dry spell"
+msgstr "الجفاف / موجة الجفاف"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:59
+msgid "Dust storm/Sandstorm"
+msgstr "عاصفة ترابية/عاصفة رملية"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:60
+msgid "Extra-tropical cyclone"
+msgstr "إعصار خارج المداري"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:61
+msgid "Flood"
+msgstr "فيضان"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:62
+msgid "Fog"
+msgstr "ضباب"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:63
+msgid "Haze/Smoke"
+msgstr "ضباب / دخان"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:64
+msgid "Frost"
+msgstr "الصقيع"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:65
+msgid "Hail"
+msgstr "يشيد"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:66
+msgid "Heat wave"
+msgstr "موجة حارة"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:67
+msgid "High UV radiation"
+msgstr "الأشعة فوق البنفسجية العالية"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:68
+msgid "Icing"
+msgstr "تثليج"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:69
+msgid "Freezing rain"
+msgstr "المطر المتجمد"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:70
+msgid "Landslide/Mudslide & Debris flow"
+msgstr "الانهيارات الأرضية / الانهيارات الطينية وتدفق الحطام"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:71
+#, fuzzy
+#| msgid "Lighting"
+msgid "Lightning"
+msgstr "البرق"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:72
+msgid "Pollen pollution/Polluted air"
+msgstr "تلوث حبوب اللقاح/الهواء الملوث"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:73
+msgid "Rain/Wet Spell"
+msgstr "المطر / تعويذة الرطب"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:74
+msgid "Snow"
+msgstr "ثلج"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:75
+msgid "Snowstorm"
+msgstr "عاصفة ثلجية"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:76
+msgid "Space weather event"
+msgstr "حدث الطقس الفضائي"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:77
+msgid "High Seas/Rogue waves etc."
+msgstr "أعالي البحار/الأمواج المارقة وما إلى ذلك."
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:78
+msgid "Storm surge/Coastal flood"
+msgstr "عرام العواصف / الفيضانات الساحلية"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:79
+msgid "Thunderstorms/Squall lines"
+msgstr "العواصف الرعدية / خطوط العاصفة"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:80
+msgid "Tornado"
+msgstr "اعصار"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:81
+msgid "Tropical cyclone"
+msgstr "الإعصار المداري"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:82
+msgid "Tsunami"
+msgstr "تسونامي"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:83
+msgid "Volcanic ash"
+msgstr "الرماد البركاني"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:84
+msgid "Wild land fire/Forest fire"
+msgstr "حرائق الأراضي البرية/حرائق الغابات"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:85
+msgid "Wind"
+msgstr "رياح"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:149
+msgid "Red severity"
+msgstr "شدة حمراء"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:158
+msgid "Orange severity"
+msgstr "خطورة البرتقال"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:166
+msgid "Yellow severity"
+msgstr "خطورة الصفراء"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:174
+msgid "Minor severity"
+msgstr "خطورة طفيفة"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:182
+msgid "Unknown severity"
+msgstr "خطورة غير معروفة"
+
+#: capcomposer/src/capcomposer/capeditor/constants.py:214
+#: capcomposer/src/capcomposer/capeditor/constants.py:242
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:171
+msgid "Unknown"
+msgstr "مجهول"
+
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:11
+msgid "Copy Paste XML"
+msgstr "نسخ ولصق XML"
+
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:12
+msgid "URL"
+msgstr "عنوان URL"
+
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:13
+msgid "File"
+msgstr "ملف"
+
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:17
+msgid "Load from"
+msgstr "تحميل من"
+
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:18
+msgid "Paste your CAP XML here"
+msgstr "الصق CAP XML هنا"
+
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:19
+msgid "CAP Alert XML URL"
+msgstr "عنوان URL الخاص بتنبيه CAP بتنسيق XML"
+
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:20
+msgid "CAP File"
+msgstr "ملف CAP"
+
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:35
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:37
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:39
+msgid "This field is required."
+msgstr "هذه الخانة مطلوبه."
+
+#: capcomposer/src/capcomposer/capeditor/forms/capimporter.py:75
+msgid ""
+"An error occurred while trying to load the CAP XML. Please check the data "
+"and try again."
+msgstr ""
+"حدث خطأ أثناء محاولة تحميل CAP XML. يرجى التحقق من البيانات والمحاولة مرة "
+"أخرى."
+
+#: capcomposer/src/capcomposer/capeditor/models.py:136
+msgid ""
+"You must select at least one reference alert for this message type. Only "
+"'Alert' Message Type can be saved without references."
+msgstr ""
+"يجب عليك تحديد تنبيه مرجعي واحد على الأقل لهذا النوع من الرسائل. يمكن حفظ "
+"نوع رسالة \"التنبيه\" فقط بدون مراجع."
+
+#: capcomposer/src/capcomposer/capeditor/models.py:145
+msgid ""
+"You cannot reference an alert to itself. Please select a previously "
+"published alert."
+msgstr "لا يمكنك الإشارة إلى تنبيه لنفسه. الرجاء تحديد تنبيه تم نشره مسبقًا."
+
+#: capcomposer/src/capcomposer/capeditor/models.py:151
+msgid "You cannot select the same alert more than once."
+msgstr "لا يمكنك تحديد نفس التنبيه أكثر من مرة."
+
+#: capcomposer/src/capcomposer/capeditor/models.py:161
+msgid ""
+"Draft - A preliminary template or draft, not actionable in its current form"
+msgstr "مسودة - قالب أو مسودة أولية، غير قابلة للتنفيذ في شكلها الحالي"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:162
+msgid "Actual - Actionable by all targeted recipients"
+msgstr "فعلي - قابل للتنفيذ من قبل جميع المستلمين المستهدفين"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:163
+msgid "Test - Technical testing only, all recipients disregard"
+msgstr "الاختبار - الاختبار الفني فقط، يتجاهله جميع المستلمين"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:164
+msgid ""
+"Exercise - Actionable only by designated exercise participants; exercise "
+"identifier SHOULD appear in note"
+msgstr ""
+"التمرين - لا يمكن تنفيذه إلا من قبل المشاركين المعينين في التمرين؛ يجب أن "
+"يظهر معرف التمرين في الملاحظة"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:166
+msgid "System - For messages that support alert network internal functions"
+msgstr "النظام - للرسائل التي تدعم الوظائف الداخلية لشبكة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:170
+msgid "Alert - Initial information requiring attention by targeted recipients"
+msgstr ""
+"تنبيه - المعلومات الأولية التي تتطلب الاهتمام من قبل المستلمين المستهدفين"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:171
+msgid ""
+"Update - Updates and supersedes the earlier message(s) identified in "
+"referenced alerts"
+msgstr ""
+"تحديث - يقوم بتحديث الرسالة (الرسائل) السابقة المحددة في التنبيهات المشار "
+"إليها ويحل محلها"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:172
+msgid "Cancel - Cancels the earlier message(s) identified in references"
+msgstr "إلغاء - يلغي الرسالة (الرسائل) السابقة المحددة في المراجع"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:183
+msgid "Public - For general dissemination to unrestricted audiences"
+msgstr "عام - للنشر العام لجماهير غير مقيدة"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:184
+msgid ""
+"Restricted - For dissemination only to users with a known operational "
+"requirement as in the restriction field"
+msgstr ""
+"مقيد - للتوزيع فقط على المستخدمين ذوي المتطلبات التشغيلية المعروفة كما هو "
+"الحال في مجال التقييد"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:186
+msgid ""
+"Private - For dissemination only to specified addresses as in the addresses "
+"field in the alert"
+msgstr ""
+"خاص - للنشر فقط على العناوين المحددة كما هو موضح في حقل العناوين في التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:189
+msgid "Id"
+msgstr "بطاقة تعريف"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:190
+msgid "Unique ID. Auto generated on creation."
+msgstr "معرف فريد. تم إنشاؤها تلقائيًا عند الإنشاء."
+
+#: capcomposer/src/capcomposer/capeditor/models.py:191
+msgid "Sender"
+msgstr "مرسل"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:192
+msgid ""
+"Identifies the originator of an alert. For example the website address of "
+"the institution"
+msgstr "يحدد منشئ التنبيه. على سبيل المثال عنوان الموقع الإلكتروني للمؤسسة"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:194
+msgid "Sent"
+msgstr "مرسل"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:195
+msgid ""
+"Time and date of origination of the alert. Automatically generated by the "
+"system during publishing"
+msgstr ""
+"وقت وتاريخ إصدار التنبيه. يتم إنشاؤها تلقائيًا بواسطة النظام أثناء النشر"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:197
+msgid "Status"
+msgstr "حالة"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:198
+msgid "The code denoting the appropriate handling of the alert"
+msgstr "الرمز الذي يشير إلى التعامل المناسب مع التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:200
+msgid "Message Type"
+msgstr "نوع الرسالة"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:201
+msgid "The code denoting the nature of the alert message"
+msgstr "الرمز الذي يدل على طبيعة رسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:202
+msgid "Scope"
+msgstr "نِطَاق"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:203
+msgid "The code denoting the intended distribution of the alert message"
+msgstr "الرمز الذي يشير إلى التوزيع المقصود لرسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:204
+msgid "Source"
+msgstr "مصدر"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:205
+msgid "The text identifying the source of the alert message"
+msgstr "النص الذي يحدد مصدر رسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:207
+msgid ""
+"The text describing the rule for limiting distribution of the restricted "
+"alert message. Used when scope value is Restricted"
+msgstr ""
+"النص الذي يصف قاعدة الحد من توزيع رسالة التنبيه المقيدة. يُستخدم عندما تكون "
+"قيمة النطاق مقيدة"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:209
+msgid "Restriction"
+msgstr "تقييد"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:211
+msgid "The code denoting the special handling of the alert message"
+msgstr "الرمز الذي يشير إلى المعالجة الخاصة لرسالة التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:212
+msgid "Code"
+msgstr "شفرة"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:214
+msgid ""
+"The text describing the purpose or significance of the alert message.The "
+"message note is primarily intended for use with <status> 'Exercise' and "
+"<msgType> 'Error'"
+msgstr ""
+"النص الذي يصف غرض رسالة التنبيه أو أهميتها. ملاحظة الرسالة مخصصة في المقام "
+"الأول للاستخدام مع <status> 'Exercise' و<msgType> 'Error'"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:216
+msgid "Note"
+msgstr "ملحوظة"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:218
+#: capcomposer/src/capcomposer/capeditor/models.py:220
+msgid "Alert Information"
+msgstr "معلومات التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:223
+msgid "Recipient"
+msgstr "متلقي"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:224
+msgid "Addresses"
+msgstr "العناوين"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:225
+msgid ""
+"The group listing of intended recipients of the alert message, if scope is "
+"Private"
+msgstr ""
+"قائمة المجموعة للمستلمين المقصودين لرسالة التنبيه، إذا كان النطاق خاصًا"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:230
+msgid "Reference Alerts"
+msgstr "التنبيهات المرجعية"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:235
+msgid "Incidents"
+msgstr "الحوادث"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:252
+msgid "Alert Identification"
+msgstr "تحديد التنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:317
+msgid "Expired"
+msgstr "منتهي الصلاحية"
+
+#: capcomposer/src/capcomposer/capeditor/models.py:320
+msgid "Ongoing"
+msgstr "مستمر"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:47
+msgid "Issued"
+msgstr "صادر"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:95
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:172
+msgid "Urgency:"
+msgstr "الاستعجال:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:128
+msgid "CAP XML Link"
+msgstr "رابط CAP XML"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:140
+msgid "Alert Severity"
+msgstr "تنبيه الخطورة"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:180
+msgid "Affected area"
+msgstr "المنطقة المتضررة"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:209
+msgid "Event Description"
+msgstr "وصف الحدث"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/cap_alert_page.html:220
+msgid "Instructions"
+msgstr "تعليمات"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/load_cap_alert.html:6
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:6
+#, python-format
+msgid "Import CAP Alert %(title)s"
+msgstr "استيراد تنبيه CAP %(العنوان)s"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/load_cap_alert.html:15
+msgid "Import CAP Alert"
+msgstr "تنبيه استيراد CAP"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/load_cap_alert.html:37
+msgid "Load"
+msgstr "حمولة"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:17
+msgid "Import CAP Alert - Preview"
+msgstr "تنبيه استيراد CAP - معاينة"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:25
+msgid "Import Type:"
+msgstr "نوع الاستيراد:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:34
+msgid "Source URL:"
+msgstr "عنوان URL المصدر:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:43
+msgid "Source File Name:"
+msgstr "اسم الملف المصدر:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:59
+msgid "Load different alert"
+msgstr "تحميل تنبيه مختلف"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:68
+msgid "Sender:"
+msgstr "مرسل:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:76
+msgid "Sent:"
+msgstr "مرسل:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:84
+msgid "Status:"
+msgstr "حالة:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:92
+msgid "Message Type:"
+msgstr "نوع الرسالة:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:112
+msgid "Create Draft Alert"
+msgstr "إنشاء مسودة تنبيه"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:146
+msgid "Language:"
+msgstr "لغة:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:154
+msgid "Category:"
+msgstr "فئة:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:164
+msgid "Event:"
+msgstr "حدث:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:180
+msgid "Severity:"
+msgstr "خطورة:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:188
+msgid "Certainty:"
+msgstr "بالتاكيد:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:199
+msgid "Effective:"
+msgstr "فعال:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:209
+msgid "Onset:"
+msgstr "بداية:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:219
+msgid "Expires:"
+msgstr "تنتهي:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:231
+msgid "Headline:"
+msgstr "العنوان:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:239
+msgid "Description:"
+msgstr "وصف:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:248
+msgid "Instruction:"
+msgstr "تعليمات:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/preview_cap_alert.html:258
+msgid "Area:"
+msgstr "منطقة:"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/widgets/circle_widget.html:10
+msgid "Longitude"
+msgstr "خط الطول"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/widgets/circle_widget.html:22
+msgid "Latitude"
+msgstr "خط العرض"
+
+#: capcomposer/src/capcomposer/capeditor/templates/capeditor/widgets/circle_widget.html:36
+msgid "Radius (in kilometers) "
+msgstr "نصف القطر (بالكيلومترات)"
+
+#: capcomposer/src/capcomposer/capeditor/wagtail_hooks.py:93
+#, python-format
+msgid "Page '%(page_title)s' copied."
+msgstr "تم نسخ الصفحة '%(page_title)s'."
+
+#~ msgid "English"
+#~ msgstr "إنجليزي"
+
+#~ msgid "French"
+#~ msgstr "فرنسي"
+
+#~ msgid ""
+#~ "The code denoting the category of the subject event of the alert message"
+#~ msgstr "الرمز الذي يشير إلى فئة الحدث الموضوعي لرسالة التنبيه"
+
+#~ msgid "Event codes"
+#~ msgstr "رموز الأحداث"
+
+#~ msgid "Time and date of origination of the alert"
+#~ msgstr "وقت وتاريخ إصدار التنبيه"
+
+#~ msgid "Unknown - Urgency not known"
+#~ msgstr "غير معروف - الاستعجال غير معروف"
+
+#~ msgid "Unknown - Certainty unknown"
+#~ msgstr "غير معروف - اليقين غير معروف"
+
+#~ msgid "Intended audience"
+#~ msgstr "الجمهور المستهدف"
+
+#~ msgid "CAP Sender Identifier"
+#~ msgstr "معرف مرسل CAP"
+
+#~ msgid "Can be the website link or email of the sending institution"
+#~ msgstr ""
+#~ "يمكن أن يكون رابط الموقع الإلكتروني أو البريد الإلكتروني للمؤسسة المرسلة"
+
+#~ msgid "Audience Type"
+#~ msgstr "نوع الجمهور"
+
+#~ msgid "Audience Types"
+#~ msgstr "أنواع الجمهور"
+
+#~ msgid "Target audiences for published alerts"
+#~ msgstr "الجماهير المستهدفة للتنبيهات المنشورة"
+
+#~ msgid ""
+#~ "Acknowledge - Acknowledges receipt and acceptance of the message(s) "
+#~ "identified in references field"
+#~ msgstr "إقرار - إقرار باستلام وقبول الرسالة (الرسائل) المحددة في حقل المراجع"
+
+#~ msgid ""
+#~ "Error -  Indicates rejection of the message(s) identified in references; "
+#~ "explanation SHOULD appear in note field"
+#~ msgstr ""
+#~ "خطأ - يشير إلى رفض الرسالة (الرسائل) المحددة في المراجع؛ يجب أن يظهر الشرح "
+#~ "في حقل الملاحظة"
+
+#~ msgid "Identifier"
+#~ msgstr "المعرف"

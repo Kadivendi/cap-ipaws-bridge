@@ -1,0 +1,31 @@
+{% load i18n l10n %}
+
+<div id="{{ id }}_div_map" class="multipolygon_map_wrapper">
+    <div id="{{ id }}_map" class="multipolygon_map">
+    </div>
+    <textarea id="{{ id }}" class="vSerializedField required" name="{{ name }}" hidden
+              data-boundaryinfourl="{{ boundary_info_url }}"
+              data-ungeojsonurl="{{ un_geojson_url }}"
+<<<<<<< HEAD
+              data-convertareafileurl="{{ convert_area_file_url }}">
+=======
+              data-map-widget-config-url="{{ map_widget_config_url }}"
+    >
+>>>>>>> 03f2145aa926ef5b3127bdbd503ceca2aaff1392
+        {{ serialized }}
+    </textarea>
+    <script>
+        {% block options %}
+            var options = {
+                geom_name: '{{ geom_type }}',
+                id: '{{ id }}',
+                map_id: '{{ id }}_map',
+                map_srid: {{ map_srid|unlocalize }},
+                name: '{{ name }}',
+                resize_trigger_selector: '{{ resize_trigger_selector }}',
+            };
+        {% endblock %}
+        const {{ module }} =
+            new MultiPolygonWidget(options);
+    </script>
+</div>
