@@ -1,0 +1,32 @@
+[
+  {
+    "event_id": "sample-tornado-2026-001",
+    "severity": "Extreme",
+    "urgency": "Immediate",
+    "certainty": "Observed",
+    "headline": "Tornado Warning for Western Oklahoma County",
+    "description": "A confirmed tornado was reported near Yukon at 14:32 CST. Move to a basement or interior room on the lowest floor of a sturdy building.",
+    "instruction": "Take shelter immediately. Avoid windows. Stay tuned to local media.",
+    "target_areas": ["Oklahoma County, OK", "Canadian County, OK"]
+  },
+  {
+    "event_id": "sample-flood-2026-002",
+    "severity": "Severe",
+    "urgency": "Immediate",
+    "certainty": "Observed",
+    "headline": "Flash Flood Warning for Harris County",
+    "description": "Doppler radar indicated thunderstorms producing heavy rain across the county. Flash flooding is expected to begin shortly.",
+    "instruction": "Do not drive through flooded roadways. Turn around, do not drown.",
+    "target_areas": ["Harris County, TX"]
+  },
+  {
+    "event_id": "sample-wildfire-2026-003",
+    "severity": "Extreme",
+    "urgency": "Immediate",
+    "certainty": "Observed",
+    "headline": "Wildfire Evacuation Order — Eaton Canyon",
+    "description": "Mandatory evacuation in effect for residents north of E Mendocino St and east of Lake Ave due to rapidly spreading wildfire.",
+    "instruction": "Evacuate now via designated routes. Do not return until cleared by fire officials.",
+    "target_areas": ["Altadena, CA", "Pasadena, CA"]
+  }
+]
