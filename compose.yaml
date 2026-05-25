@@ -1,0 +1,69 @@
+services:
+  cap-bridge:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://capbridge:capbridge@postgres:5432/cap_ipaws
+      - REDIS_URL=redis://redis:6379/0
+      - IPAWS_POLL_INTERVAL=30
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./config:/app/config:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - cap-bridge-network
+
+  cap-composer:
+    build:
+      context: ./cap_composer_module
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - DATABASE_URL=postgresql://capbridge:capbridge@postgres:5432/cap_ipaws
+      - DJANGO_SETTINGS_MODULE=capcomposer.config.settings.production
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - cap-bridge-network
+
+  postgres:
+    image: postgis/postgis:15-3.4
+    environment:
+      - POSTGRES_DB=cap_ipaws
+      - POSTGRES_USER=capbridge
+      - POSTGRES_PASSWORD=capbridge
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U capbridge"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - cap-bridge-network
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - cap-bridge-network
+
+volumes:
+  pgdata:
+
+networks:
+  cap-bridge-network:
+    driver: bridge
