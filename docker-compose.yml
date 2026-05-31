@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - IPAWS_CERT_PATH=/certs/fema.pem
+      - IPAWS_ENDPOINT=https://tds.fema.gov/ipaws
+    volumes:
+      - ./certs:/certs:ro
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
