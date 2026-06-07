@@ -47,6 +47,31 @@ class CircuitBreaker:
         self._rejected_calls = 0
 
     def call(self, fn, *args, **kwargs):
+        self._guard_open()
+        try:
+            result = fn(*args, **kwargs)
+            with self._lock:
+                self._on_success()
+            return result
+        except Exception:
+            with self._lock:
+                self._on_failure()
+            raise
+
+    async def async_call(self, fn, *args, **kwargs):
+        """Async variant for awaitable callables (e.g. httpx, aiohttp)."""
+        self._guard_open()
+        try:
+            result = await fn(*args, **kwargs)
+            with self._lock:
+                self._on_success()
+            return result
+        except Exception:
+            with self._lock:
+                self._on_failure()
+            raise
+
+    def _guard_open(self) -> None:
         with self._lock:
             self._total_calls += 1
             if self._state == CircuitState.OPEN:
@@ -59,16 +84,6 @@ class CircuitBreaker:
                         f"Circuit [{self.config.name}] is OPEN — "
                         f"retry in {self._seconds_until_probe():.0f}s"
                     )
-
-        try:
-            result = fn(*args, **kwargs)
-            with self._lock:
-                self._on_success()
-            return result
-        except Exception as exc:
-            with self._lock:
-                self._on_failure()
-            raise
 
     def _on_success(self):
         self._failure_count = 0

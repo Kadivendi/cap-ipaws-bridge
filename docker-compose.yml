@@ -8,6 +8,12 @@ services:
     environment:
       - IPAWS_CERT_PATH=/certs/fema.pem
       - IPAWS_ENDPOINT=https://tds.fema.gov/ipaws
+      - IPAWS_SANDBOX=true
+      - MESH_GATEWAY_URL=http://resilient-mesh-gateway:8090
+      - MESH_GATEWAY_API_KEY=${MESH_GATEWAY_API_KEY:-}
+      - RAPID_ALERT_URL=http://rapid-alert-platform:8080
+      - RAPID_ALERT_CLIENT_ID=${RAPID_ALERT_CLIENT_ID:-}
+      - RAPID_ALERT_CLIENT_SECRET=${RAPID_ALERT_CLIENT_SECRET:-}
     volumes:
       - ./certs:/certs:ro
     restart: always
